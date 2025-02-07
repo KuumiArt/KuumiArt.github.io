@@ -1,0 +1,12 @@
+img{
+    max-height:300px;
+    border-radius:50%;
+    border-color:black;
+    border-width:2px;
+    border-style:solid;
+}
+
+#construction a{
+    text-decoration:none;
+    margin: 1px 4px 1px 4px;
+}
