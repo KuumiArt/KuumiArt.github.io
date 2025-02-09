@@ -13,14 +13,15 @@ img.round{
 
 #homepageGallery {
     display: flex;
-    flex-wrap: wrap; /* Allow images to wrap to new rows */
-    margin: 0; /* Remove any external margin on the container */
+    flex-wrap: wrap; 
+    margin: 0; 
 }
 
 #homepageGallery img {
-    width: 20%; /* Each image takes up one-third of the container width */
-    aspect-ratio: 1; /* Forces the images to maintain a square aspect ratio */
-    object-fit: cover; /* Ensures the image covers the square container without distortion */
+    width: 20%; 
+    aspect-ratio: 1; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
 }
 
 .socials a {

@@ -7,9 +7,9 @@
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
 </head>
 <body>
-
     <!-- NAV BAR ---------------------------------------------------------------------->
     <object type="text/html" data="navbar.html"></object>
 
@@ -50,14 +50,17 @@
                 </a>
             </div>
 
-
-
-
         </div>
     </div>
 
     <br /><br /><br />
-    <div id="homepageGallery"></div>
+    <div class="gallery" id="homepageGallery"></div>
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <img id="lightbox-image" src="" alt="">
+        </div>
+    </div>
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     <!-- FOOTER ---------------------------------------------------------------------->
@@ -65,40 +68,6 @@
 
     <!-- SCRIPT  ---------------------------------------------------------------------->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const homepageImages = [
-                "mualani.jpg",
-                "oyThere.jpg",
-                "silvi.jpg",
-                "sho.jpg",
-                "sen.jpg",
-                "tammi.jpg",
-                "nox.jpg",
-                "komi.jpg",
-                "lone.jpg",
-                "lucidia.jpg",
-                "mandarin.jpg",
-                "zhongli.jpg",
-                "gin.jpg",
-                "kaeya.jpg",
-                "lunar.jpg",
-                "red.jpg",
-                "showdown.jpg"
-            ];
-
-            const galleryDiv = document.getElementById('homepageGallery');
-
-            homepageImages.forEach(function (imageSrc) {
-
-                const imgElement = document.createElement('img');
-
-                imgElement.src = "images/homepage/" + imageSrc;
-
-                galleryDiv.appendChild(imgElement);
-            });
-        });
-
-    </script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
