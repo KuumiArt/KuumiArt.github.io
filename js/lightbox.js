@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const homepageImages = [
+        "lilia.jpg",
         "mualani.jpg",
         "oyThere.jpg",
         "silvi.jpg",
